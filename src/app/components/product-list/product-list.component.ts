@@ -24,11 +24,11 @@ export class ProductListComponent implements OnInit, OnChanges {
   ngOnInit(): void {
     if (this.modelProducts() != null) {
       this._products = this.modelProducts();
-      this.applyFilter();
     }
-    // else {
-    //   this._products = products;
-    // }
+    else {
+      this._products = products;
+    }
+          this.applyFilter();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
