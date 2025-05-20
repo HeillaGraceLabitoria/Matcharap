@@ -1,30 +1,46 @@
-<h2>Your Order</h2>
-<div *ngIf="cartItems.length > 0; else emptyCart">
-  <div *ngFor="let item of cartItems; let i = index" class="cart-item">
-    <img [src]="item.image" alt="{{ item.title }}" class="product-image" />
+<div class="order-component">
+    <h2 class="header">Your Order</h2>
+    <div class="table-order" *ngIf="cartItems.length > 0; else emptyCart">
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of cartItems; let i = index">
+                    <td class="item-cell">
+                        <img [src]="item.image" alt="{{ item.title }}" class="product-image" />
+                        <span>{{ item.title }}</span>
+                    </td>
+                    <td class="quantity-cell">
+                        <button (click)="decreaseQuantity(i)">−</button>
+                        {{ item.quantity || 1 }}
+                        <button (click)="increaseQuantity(i)">+</button>
+                    </td>
+                    <td class="price-cell">
+                        {{ (item.price * (item.quantity || 1)) | currency:'PHP':'symbol' }}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-    <div class="cart-details">
-      <p><strong>{{ item.title }}</strong></p>
-      <p>
-        Quantity:
-        <button (click)="decreaseQuantity(i)">−</button>
-        {{ item.quantity || 1 }}
-        <button (click)="increaseQuantity(i)">+</button>
-      </p>
-      <p>Price: {{ item.price | currency:'PHP':'symbol' }}</p>
+        <div class="total-price">
+            <hr />
+            <p><strong>Total Price:</strong> {{ getTotalPrice() | currency:'PHP':'symbol' }}</p>
+        </div>
+
+        <div class="actions">
+            <button (click)="goBackToMenu()" class="back-button">Back to Menu</button>
+            <button (click)="completeOrder()" class="complete-order-button">Complete Order</button>
+        </div>
+
     </div>
-  </div>
 
-  <div class="total-price">
-    <hr />
-    <p><strong>Total Price:</strong> {{ getTotalPrice() | currency:'PHP':'symbol' }}</p>
-  </div>
+    <ng-template #emptyCart>
+        <p>Your cart is empty.</p>
+    </ng-template>
 
-  <div class="complete-order">
-    <button (click)="completeOrder()">Complete Order</button>
-  </div>
 </div>
-
-<ng-template #emptyCart>
-  <p>Your cart is empty.</p>
-</ng-template>
