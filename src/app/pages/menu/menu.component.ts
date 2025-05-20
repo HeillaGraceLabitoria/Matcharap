@@ -16,7 +16,7 @@ export class MenuComponent {
   selectedCategory: string = '';
   cart: any[] = [];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     if (this._products != null) {
@@ -31,19 +31,22 @@ export class MenuComponent {
     console.log(this._products);
   }
 
-  addToCart(product: any): void {
-    if (product.quantity > 0) {
-      // Check if product is already in the cart
+  addToCart(): void {
+    const availableProducts = this._products.filter(product => product.quantity > 0);
+
+    for (const product of availableProducts) {
       const index = this.cart.findIndex(item => item.id === product.id);
+
       if (index === -1) {
-        this.cart.push({ ...product, quantityAdded: 1 });
+        this.cart.push({ ...product, quantity: product.quantity });
       } else {
-        // Optionally increase quantity in cart
-        this.cart[index].quantityAdded += 1;
+        this.cart[index].quantity += product.quantity;
       }
-      console.log('Cart:', this.cart);
-    } else {
-      console.log('Cannot add product with zero quantity');
+        product.quantity = 0;
     }
+
+    console.log('Cart:', this.cart);
+    localStorage.setItem('cart', JSON.stringify(this.cart));
   }
+
 }

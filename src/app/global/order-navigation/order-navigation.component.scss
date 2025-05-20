@@ -14,7 +14,8 @@
       i {
         cursor: pointer;
         transition: color 0.3s;
-  
+        color: #fff;
+
         &:hover {
           color: #a3c585;
         }
@@ -38,7 +39,7 @@
     .menu-icon {
       font-size: 1.5rem;
       cursor: pointer;
-  
+      color: #fff;
       &:hover {
         color: #a3c585;
       }

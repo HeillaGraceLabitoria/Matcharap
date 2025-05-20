@@ -16,7 +16,7 @@ export class HeaderComponent {
       { label: 'Home', routerLink: '/' },  // Use routerLink or url as needed
       { label: 'About Us', url: './about' },
       { label: 'Contact Us', url: './contact' },
-      { label: 'Order Now', routerLink: './order' }
+      // { label: 'Order Now', routerLink: './order' }
     ];
   }
 }

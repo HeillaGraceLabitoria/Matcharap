@@ -1,0 +1,100 @@
+:host {
+  display: block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5fdf6;
+  padding: 20px;
+  border-radius: 12px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 100, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #4e944f;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background-color: #e6f4ea;
+  border: 1px solid #c9e4c5;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.cart-item p {
+  margin: 5px 0;
+  color: #2e5939;
+}
+
+.cart-item button {
+  background-color: #cdeac0;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #3a7b3c;
+  transition: background-color 0.2s ease;
+}
+
+.cart-item button:hover {
+  background-color: #b6e1a3;
+}
+
+
+.total-price {
+  text-align: right;
+  font-size: 1.2em;
+  color: #3d7b3f;
+  margin-top: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #b4ddb4;
+  margin: 15px 0;
+}
+
+p strong {
+  color: #3a643b;
+}
+
+.complete-order {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.complete-order button {
+  background-color: #4e944f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.complete-order button:hover {
+  background-color: #3a7b3c;
+}
+
+.product-image {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0; /* Remove margin to align with text */
+}
+
+.cart-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

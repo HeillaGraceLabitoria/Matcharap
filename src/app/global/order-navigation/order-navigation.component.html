@@ -1,9 +1,27 @@
 <section class="utility-bar">
-    <div class="utils">
-      <i class="fas fa-user"></i>
-      <i class="fas fa-shopping-cart"></i>
+  <div class="utils">
+    <i class="fas fa-user"></i>
+    <div class="cart-icon-wrapper" style="position: relative; display: inline-block;">
+      <i (click)="goToCart()" class="fas fa-shopping-cart"></i>
+      <span 
+        class="cart-count-badge" 
+        *ngIf="cart.length > 0" 
+        style="
+          position: absolute;
+          top: -8px;
+          right: -10px;
+          background: red;
+          color: white;
+          border-radius: 50%;
+          padding: 2px 6px;
+          font-size: 12px;
+          font-weight: bold;
+          pointer-events: none;
+        ">
+        {{ getCartCount() }}
+      </span>
     </div>
-    <input type="text" placeholder="Search..." />
-    <i class="fas fa-bars menu-icon"></i>
-  </section>
-  
+  </div>
+  <input type="text" placeholder="Search..." />
+  <i class="fas fa-bars menu-icon"></i>
+</section>
