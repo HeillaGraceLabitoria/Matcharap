@@ -19,7 +19,7 @@ export class ProductCardComponent implements OnInit{
 
 
   ngOnInit(): void {
-
+    console.log("jeelo");
   }
 
   increment() {
