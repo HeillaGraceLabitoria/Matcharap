@@ -6,7 +6,7 @@
   }
   
   :host ::ng-deep .p-menubar {
-    background-color: #4d7216;
+    background-color: #96b16e;
     border-radius: 0;
     border: none;
   }
@@ -20,11 +20,16 @@
   }
   
   :host ::ng-deep .p-menubar-root-list > li > a {
-    color: #3B5323;
+    color: #fff;
     font-weight: 600;
     font-size: 1rem;
   }
-  
+  :host ::ng-deep.p-menubar-item-label{
+    color: #fff;
+  }
+    :host ::ng-deep.p-menubar-item-content :hover{
+    background-color: #A3C585;
+  }
   :host ::ng-deep .p-menubar-root-list > li > a:hover {
     background-color: #A3C585;
     color: #ffffff;
