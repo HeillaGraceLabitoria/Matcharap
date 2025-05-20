@@ -37,7 +37,7 @@ export class OrderNavigationComponent {
   }
 
   goToCustomer() {
-    this.router.navigate(['/user']);
+    this.router.navigate(['/customer']);
   }
 
   getCartCount() {
