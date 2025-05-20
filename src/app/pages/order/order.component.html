@@ -51,3 +51,9 @@
         </div>
     </ng-template>
 </div>
+
+<div class="modal-overlay" *ngIf="showSummaryModal" (click)="closeModal()">
+  <div class="modal-content">
+    <app-order-summary [cartItems]="cartItems"></app-order-summary>
+  </div>
+</div>

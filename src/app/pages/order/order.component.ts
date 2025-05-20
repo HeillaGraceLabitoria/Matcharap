@@ -2,21 +2,25 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { DeliveryFormComponent } from '../../components/delivery-form/delivery-form.component';
+import { OrderSummaryComponent } from '../../components/order-summary/order-summary.component';
 
 @Component({
   selector: 'app-order',
-  imports: [CommonModule, DeliveryFormComponent],
+  imports: [CommonModule, DeliveryFormComponent, OrderSummaryComponent],
   templateUrl: './order.component.html',
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent {
   cartItems: any[] = [];
+  showSummaryModal = false;
+  deliveryInfo: any = null;
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {
     const storedCart = localStorage.getItem('cart');
     this.cartItems = storedCart ? JSON.parse(storedCart) : [];
+    this.deliveryInfo = JSON.parse(localStorage.getItem('deliveryForm') || '{}');
   }
 
   getTotalPrice(): number {
@@ -27,9 +31,17 @@ export class OrderComponent {
   }
 
   completeOrder(): void {
-    alert('Thank you for your order!');
+    this.showSummaryModal = true;
+    this.cartItems = JSON.parse(localStorage.getItem('cart') || '[]');
+    this.deliveryInfo = JSON.parse(localStorage.getItem('deliveryForm') || '{}');
+  }
+
+  
+  closeModal(): void {
+    this.showSummaryModal = false;
     localStorage.removeItem('cart');
     this.cartItems = [];
+
   }
 
   increaseQuantity(index: number) {

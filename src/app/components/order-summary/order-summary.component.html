@@ -1,0 +1,31 @@
+<div class="receipt-container" *ngIf="cartItems.length > 0">
+  <h3>Order Summary</h3>
+
+  <ul class="receipt-list">
+    <li *ngFor="let item of cartItems">
+      <div class="item-line">
+        <span>{{ item.title }} x{{ item.quantity || 1 }}</span>
+        <span>{{ (item.price * (item.quantity || 1)) | currency: 'PHP' : 'symbol' }}</span>
+      </div>
+    </li>
+  </ul>
+
+  <hr />
+  <div class="total-line">
+    <strong>Total:</strong>
+    <strong>{{ getTotalPrice() | currency: 'PHP' : 'symbol' }}</strong>
+  </div>
+
+  <hr />
+  <div class="delivery-info" *ngIf="deliveryInfo">
+    <p><strong>Delivery Information</strong></p>
+    <p>Name: {{ deliveryInfo.name }}</p>
+    <p>Address: {{ deliveryInfo.address }}</p>
+    <p>Contact: {{ deliveryInfo.contact }}</p>
+    <p>Payment Method: {{ deliveryInfo.paymentMethod }}</p>
+  </div>
+</div>
+
+<div *ngIf="cartItems.length === 0">
+  <p>No items in the order.</p>
+</div>
