@@ -3,25 +3,20 @@
     <i (click)="goToCustomer()" class="fas fa-user"></i>
     <div class="cart-icon-wrapper" style="position: relative; display: inline-block;">
       <i (click)="goToCart()" class="fas fa-shopping-cart"></i>
-      <span 
-        class="cart-count-badge" 
-        *ngIf="cart.length > 0" 
-        style="
-          position: absolute;
-          top: -8px;
-          right: -10px;
-          background: red;
-          color: white;
-          border-radius: 50%;
-          padding: 2px 6px;
-          font-size: 12px;
-          font-weight: bold;
-          pointer-events: none;
-        ">
+      <span class="cart-count-badge" *ngIf="cart.length > 0">
         {{ getCartCount() }}
       </span>
     </div>
   </div>
-  <input type="text" placeholder="Search..." />
+
+  <div class="search-wrapper">
+    <input type="text" [(ngModel)]="searchQuery" (input)="onSearch()" placeholder="Search..." />
+    <ul class="search-dropdown" *ngIf="filteredProducts.length > 0">
+      <li *ngFor="let product of filteredProducts" (click)="goToMenuWithSearch(product)">
+        {{ product.title }}
+      </li>
+    </ul>
+  </div>
+
   <i class="fas fa-bars menu-icon"></i>
 </section>
