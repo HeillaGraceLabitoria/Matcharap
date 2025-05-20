@@ -14,8 +14,8 @@ export class HeaderComponent {
   ngOnInit() {
     this.items = [
       { label: 'Home', routerLink: '/' },  // Use routerLink or url as needed
-      { label: 'About Us', url: './about' },
-      { label: 'Contact Us', url: './contact' },
+      { label: 'About Us', routerLink: './about' },
+      { label: 'Contact Us', routerLink: './contact' },
       // { label: 'Order Now', routerLink: './order' }
     ];
   }

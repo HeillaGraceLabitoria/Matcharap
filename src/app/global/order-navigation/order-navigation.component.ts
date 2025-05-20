@@ -17,6 +17,9 @@ export class OrderNavigationComponent {
     return this.cart.reduce((total, item) => total + (item.quantityAdded || 1), 0);
   }
 
+  goToCustomer() {
+    this.router.navigate(['/customer']);
+  }
   goToCart() {
     this.router.navigate(['/order']);
   }

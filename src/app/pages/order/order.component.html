@@ -7,6 +7,7 @@
                     <th>Item</th>
                     <th>Qty</th>
                     <th>Price</th>
+                    <th>Action</th> <!-- New column header -->
                 </tr>
             </thead>
             <tbody>
@@ -23,6 +24,11 @@
                     <td class="price-cell">
                         {{ (item.price * (item.quantity || 1)) | currency:'PHP':'symbol' }}
                     </td>
+                    <td class="action-cell">
+                        <button (click)="removeItem(i)" class="delete-button" title="Remove item">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -31,16 +37,17 @@
             <hr />
             <p><strong>Total Price:</strong> {{ getTotalPrice() | currency:'PHP':'symbol' }}</p>
         </div>
-
+        <app-delivery-form></app-delivery-form>
         <div class="actions">
             <button (click)="goBackToMenu()" class="back-button">Back to Menu</button>
             <button (click)="completeOrder()" class="complete-order-button">Complete Order</button>
         </div>
-
     </div>
 
     <ng-template #emptyCart>
         <p>Your cart is empty.</p>
+        <div class="actions">
+            <button (click)="goBackToMenu()" class="back-button">Back to Menu</button>
+        </div>
     </ng-template>
-
 </div>

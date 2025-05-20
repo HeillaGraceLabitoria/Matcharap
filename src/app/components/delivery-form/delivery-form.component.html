@@ -1,0 +1,54 @@
+<div class="delivery-form">
+  <h3>Delivery Information</h3>
+
+  <form [formGroup]="deliveryForm" novalidate>
+    <label for="name">Name:</label>
+    <input
+      id="name"
+      type="text"
+      formControlName="name"
+      placeholder="Enter your name"
+    />
+    <div *ngIf="deliveryForm.get('name')?.invalid && deliveryForm.get('name')?.touched" class="error">
+      Name is required.
+    </div>
+
+    <label for="address">Address:</label>
+    <textarea
+      id="address"
+      rows="3"
+      formControlName="address"
+      placeholder="Enter your address"
+    ></textarea>
+    <div *ngIf="deliveryForm.get('address')?.invalid && deliveryForm.get('address')?.touched" class="error">
+      Address is required.
+    </div>
+
+    <label for="contact">Contact Number:</label>
+    <input
+      id="contact"
+      type="tel"
+      formControlName="contact"
+      placeholder="Enter your contact number"
+    />
+    <div *ngIf="deliveryForm.get('contact')?.invalid && deliveryForm.get('contact')?.touched" class="error">
+      Valid contact number is required.
+    </div>
+
+    <h3>Payment Method</h3>
+    <div class="payment-options">
+      <label *ngFor="let method of paymentMethods" class="payment-option">
+        <input
+          type="radio"
+          formControlName="paymentMethod"
+          [value]="method.value"
+        />
+        <i [class]="method.iconClass"></i>
+        <span>{{ method.label }}</span>
+      </label>
+    </div>
+    <div *ngIf="deliveryForm.get('paymentMethod')?.invalid && deliveryForm.get('paymentMethod')?.touched" class="error">
+      Please select a payment method.
+    </div>
+  </form>
+</div>

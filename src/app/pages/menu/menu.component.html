@@ -11,5 +11,9 @@
   <div class="content">
     <app-product-list [category]="selectedCategory" [showPrice]="true" [showOrderQuantity]="true" [modelProducts]="_products"></app-product-list>
     <button class="button cart" (click)="addToCart()">Add to cart</button>
+    <button class="button cart view-cart" (click)="goToOrder()">View Orders</button>
+      <div class="add-message" *ngIf="addMessage">
+  {{ addMessage }}
+</div>
   </div>
 </div>

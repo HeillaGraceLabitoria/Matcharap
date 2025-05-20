@@ -1,0 +1,194 @@
+.order-component {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  color: #4e944f;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.order-table th,
+.order-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.item-cell {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.quantity-cell button {
+  background-color: #4e944f;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  margin: 0 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.price-cell {
+  font-weight: 600;
+}
+
+.delete-button {
+  background: transparent;
+  border: none;
+  color: #cc3e3e;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #8b1a1a;
+}
+
+.total-price {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2e5939;
+}
+
+.delivery-form {
+  background: #e6f4ea;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  color: #2e5939;
+}
+
+.delivery-form h3 {
+  color: #4e944f;
+  margin-bottom: 10px;
+}
+
+.delivery-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.delivery-form input[type='text'],
+.delivery-form input[type='tel'],
+.delivery-form textarea {
+  width: 100%;
+  padding: 7px 10px;
+  margin-top: 5px;
+  border: 1px solid #c9e4c5;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.error-msg {
+  color: #cc3e3e;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.payment-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: #d5e9d6;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  user-select: none;
+}
+
+.payment-option input[type='radio'] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.payment-option i {
+  margin-right: 6px;
+  font-size: 1.3rem;
+  color: #4e944f;
+}
+
+.payment-option:hover {
+  border-color: #4e944f;
+}
+
+.payment-option input[type='radio']:checked + i,
+.payment-option input[type='radio']:checked + span {
+  font-weight: 700;
+  color: #3a7b3c;
+}
+
+.form-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-actions button {
+  background-color: #4e944f;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-actions button:disabled {
+  background-color: #a1caa1;
+  cursor: not-allowed;
+}
+
+.form-actions button:hover:not(:disabled) {
+  background-color: #3a7b3c;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.back-button {
+  background-color: #6baf6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #4e944f;
+}

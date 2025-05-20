@@ -48,20 +48,55 @@
   font-weight: 700;
   box-shadow: 0 0 8px rgba(0, 77, 0, 0.5);
 }
-
 .content {
-  flex-grow: 1;
-  background: white;
+  margin: 20px auto;
   padding: 20px;
-  overflow-y: auto;
-  border-radius: 0 4px 4px 0;
-  color: #333;
+  background-color: #f5fdf6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 100, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
+.button {
+  background-color: #4e944f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px 8px 0 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 140px;
+  display: inline-block;
+}
 
-button.cart{
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
+.button:hover {
+  background-color: #3a7b3c;
+}
+
+.button.cart {
+  background-color: #71b77e;
+}
+
+.button.cart:hover {
+  background-color: #5ba160;
+}
+
+.button.view-cart {
+  background-color: #8bc34a;
+}
+
+.button.view-cart:hover {
+  background-color: #7aae37;
+}
+
+.add-message {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #3a7b3c;
+  font-size: 1rem;
+  min-height: 1.5em; /* reserve space even when empty */
 }

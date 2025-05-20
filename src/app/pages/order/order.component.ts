@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DeliveryFormComponent } from '../../components/delivery-form/delivery-form.component';
 
 @Component({
   selector: 'app-order',
-  imports: [CommonModule],
+  imports: [CommonModule, DeliveryFormComponent],
   templateUrl: './order.component.html',
   styleUrls: ['./order.component.css']
 })
@@ -46,6 +47,13 @@ export class OrderComponent {
   updateCartStorage() {
     localStorage.setItem('cart', JSON.stringify(this.cartItems));
   }
+
+  removeItem(index: number): void {
+  this.cartItems.splice(index, 1);
+  // Optionally update localStorage if you save the cart there
+  localStorage.setItem('cart', JSON.stringify(this.cartItems));
+}
+
 
   // New method for navigating back
   goBackToMenu() {

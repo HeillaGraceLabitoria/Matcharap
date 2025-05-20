@@ -9,12 +9,14 @@ import { Router } from '@angular/router';
   imports: [ProductListComponent, CommonModule],
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']  // fixed typo here
-})
-export class MenuComponent {
+})export class MenuComponent {
   _products = products;
   categories: string[] = [];
   selectedCategory: string = '';
   cart: any[] = [];
+
+  showToast = false;       // for toast visibility
+  addMessage = '';  // message to show below button
 
   constructor(private router: Router) { }
 
@@ -31,6 +33,10 @@ export class MenuComponent {
     console.log(this._products);
   }
 
+  goToOrder(): void {
+    this.router.navigate(['/order']);
+  }
+
   addToCart(): void {
     const availableProducts = this._products.filter(product => product.quantity > 0);
 
@@ -42,11 +48,18 @@ export class MenuComponent {
       } else {
         this.cart[index].quantity += product.quantity;
       }
-        product.quantity = 0;
+      product.quantity = 0;
     }
 
-    console.log('Cart:', this.cart);
     localStorage.setItem('cart', JSON.stringify(this.cart));
+    this.showAddMessage('Items added to cart!');
   }
 
+  showAddMessage(msg: string) {
+    this.addMessage = msg;
+
+    setTimeout(() => {
+      this.addMessage = '';
+    }, 3000);  // message disappears after 3 seconds
+  }
 }

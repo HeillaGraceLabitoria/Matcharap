@@ -131,3 +131,18 @@ hr {
 .complete-order-button:hover {
   background-color: #3a7b3c;
 }
+
+.delete-button {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
