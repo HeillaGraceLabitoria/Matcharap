@@ -1,0 +1,31 @@
+.matcha-banner {
+  background-color: #1a3304; /* Matcha green */
+  padding: 1rem;
+  text-align: center;
+  color: #F3F8EE; /* light cream */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  .brand-title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+    span {
+      color: #b2e272;
+    }
+  }
+
+  .hero-subtitle {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-weight: 500;
+    color: #DDE7CE;
+  }
+
+  .location,
+  .social {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #DDE7CE;
+  }
+}

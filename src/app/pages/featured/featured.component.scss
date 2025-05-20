@@ -1,0 +1,30 @@
+:host {
+    $matcha-green: #4d7216;
+    $matcha-light: #a3c585;
+    $matcha-hover: #c7deb0;
+    $text-dark: #2e3d2c;
+    $background: #f4fdf4;
+
+
+    button {
+        display: block;
+        margin: 2rem auto;
+        padding: 0.75rem 2rem;
+        background-color: $matcha-green;
+        border: none;
+        color: white;
+        font-weight: 600;
+        border-radius: 2rem;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s ease;
+
+        &:hover {
+            background-color: darken($matcha-green, 8%);
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}

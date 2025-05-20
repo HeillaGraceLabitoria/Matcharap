@@ -1,0 +1,16 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* white gaps between boxes */
+  background-color: white; /* background for gaps */
+  padding: 20px;
+}
+
+.about-box {
+  background-color: #2e7d32; /* matcha green */
+  color: white; /* white text */
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid black; /* black outline */
+  text-align: center; /* centers text horizontally */
+}

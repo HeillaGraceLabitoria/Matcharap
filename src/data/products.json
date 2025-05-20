@@ -1,0 +1,290 @@
+[
+  {
+    "id": -1,
+    "title": "Iced Matcha Latte",
+    "price": 120,
+    "description": "",
+    "category": "Featured",
+    "image": "https://mocktail.net/wp-content/uploads/2021/05/Matcha-Iced-Latte_ig-500x500.jpg",
+    "quantity": 0
+  },
+  {
+    "id": -2,
+    "title": "Hot Matcha Latte",
+    "price": 100,
+    "description": "",
+    "category": "Featured",
+    "image": "https://primulaproducts.com/cdn/shop/articles/jackieo_Youve_been_drinking_matcha_green_tea_latte_for_a_few_w_f5899c8d-f20b-4331-b1a8-d1eb1736d367_1456x.png?v=1687789713",
+    "quantity": 0
+  },
+  {
+    "id": -3,
+    "title": "Matcha Azuki Mochi",
+    "price": 180,
+    "description": "",
+    "category": "Featured",
+    "image": "https://i.ytimg.com/vi/hT1HC2N_F1o/maxresdefault.jpg",
+    "quantity": 0
+  },
+  {
+    "id": -4,
+    "title": "Matcha Cake",
+    "price": 200,
+    "description": "",
+    "category": "Featured",
+    "image": "https://i.pinimg.com/736x/4a/7d/4b/4a7d4b66361faf7ebc8cb83767aa8491.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 1,
+    "title": "Almond Matcha",
+    "price": 150,
+    "description": "",
+    "category": "Hot Latte",
+    "image": "https://media.istockphoto.com/id/1448770338/photo/glass-of-green-tea-matcha-latte-with-almonds.jpg?s=612x612&w=0&k=20&c=NmtuiVli0cpjqZNOTyAqyXKbsYxIGgytQtVKWsqUW_o=",
+    "quantity": 0
+  },
+  {
+    "id": 2,
+    "title": "Choco Matcha",
+    "price": 150,
+    "description": "",
+    "category": "Hot Latte",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzS2cZBQlwmi2APEnQ88ffbaa4m3oA8BcOow5RISv90UC1kj-4TU79i4kj5GxAWgpVzZk&usqp=CAU",
+    "quantity": 0
+  },
+  {
+    "id": 3,
+    "title": "Matcha",
+    "price": 100,
+    "description": "",
+    "category": "Hot Latte",
+    "image": "https://www.shutterstock.com/image-photo/matcha-latte-art-ceramic-cup-260nw-2547520329.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 4,
+    "title": "Caramel Matcha",
+    "price": 150,
+    "description": "",
+    "category": "Hot Latte",
+    "image": "https://png.pngtree.com/background/20250115/original/pngtree-matcha-green-tea-latte-with-caramel-picture-image_15466157.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 5,
+    "title": "Mint Matcha",
+    "price": 180,
+    "description": "",
+    "category": "Iced Latte",
+    "image": "https://blog.mountainroseherbs.com/hubfs/LavenderMatchaLatteRecipe_smaller.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 6,
+    "title": "Lavender Matcha",
+    "price": 200,
+    "description": "",
+    "category": "Iced Latte",
+    "image": "https://myeverydaytable.com/wp-content/uploads/IcedLavenderCreamMatcha-10.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 7,
+    "title": "Matcha",
+    "price": 120,
+    "description": "",
+    "category": "Iced Latte",
+    "image": "https://mocktail.net/wp-content/uploads/2021/05/Matcha-Iced-Latte_ig-500x500.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 8,
+    "title": "Coconut Matcha",
+    "price": 180,
+    "description": "",
+    "category": "Iced Latte",
+    "image": "https://jessicainthekitchen.com/wp-content/uploads/2021/12/Matcha-Latte-Cold03648.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 9,
+    "title": "Avocado Matcha",
+    "price": 160,
+    "description": "",
+    "category": "Smoothies",
+    "image": "https://californiaavocado.com/wp-content/uploads/2022/04/MealReplacementSmoothies_0094-Pineapple.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 10,
+    "title": "Tropical Matcha",
+    "price": 180,
+    "description": "",
+    "category": "Smoothies",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMcRVf0noIPYeneuwYKW0tLbHqiSvz74Vdrg&s",
+    "quantity": 0
+  },
+  {
+    "id": 11,
+    "title": "Matcha",
+    "price": 140,
+    "description": "Crispy and chewy cookies baked with premium matcha powder.",
+    "category": "Smoothies",
+    "image": "https://cdn.media.amplience.net/i/japancentre/Recipe-1145-healthy-matcha-smoothies/Healthy-matcha-smoothies?$poi$&w=1200&h=630&sm=c&fmt=auto",
+    "quantity": 0
+  },
+  {
+    "id": 12,
+    "title": "Mango Matcha",
+    "price": 160,
+    "description": "A healthy chia pudding infused with matcha and topped with fresh fruits.",
+    "category": "Smoothies",
+    "image": "https://teakandthyme.com/wp-content/uploads/2022/11/mango-matcha-latte-DSC_0070-1x1-1200.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 13,
+    "title": "Matcha & Azuki Bean",
+    "price": 200,
+    "description": "Traditional finely ground Japanese green tea, served hot.",
+    "category": "Ice Cream",
+    "image": "https://www.justonecookbook.com/wp-content/uploads/2022/11/Ujikintoki-Green-Tea-Shaved-Ice-9068-I.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 14,
+    "title": "Matcha Choco Chip",
+    "price": 150,
+    "description": "Iced blended matcha with a hint of sweetness and cream.",
+    "category": "Ice Cream",
+    "image": "https://joyfoodsunshine.com/wp-content/uploads/2018/03/dairy-free-matcha-ice-cream-recipe-10.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 15,
+    "title": "Matcha",
+    "price": 130,
+    "description": "Flaky croissant with matcha-flavored filling.",
+    "category": "Ice Cream",
+    "image": "https://www.rotinrice.com/wp-content/uploads/2011/08/MatchaIceCream-1.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 16,
+    "title": "Matcha Pistachio",
+    "price": 150,
+    "description": "Silky smooth pudding made with matcha and cream.",
+    "category": "Ice Cream",
+    "image": "https://www.braunhousehold.com/en-hk/mediastream/842c86cd7946c208308c/539x330",
+    "quantity": 0
+  },
+  {
+    "id": 17,
+    "title": "Matcha Mochi (4pcs)",
+    "price": 180,
+    "description": "Classic tiramisu with a Japanese matcha twist.",
+    "category": "Balls",
+    "image": "https://i.ytimg.com/vi/hT1HC2N_F1o/maxresdefault.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 18,
+    "title": "Matcha Truffles (4pcs)",
+    "price": 160,
+    "description": "Soft sandwich with matcha cream filling.",
+    "category": "Balls",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Qdc3pk2KSF1F6R3TkUBbDoF2UB4NqFQ8Ng&s",
+    "quantity": 0
+  },
+  {
+    "id": 19,
+    "title": "Matcha w/nuts (4pcs)",
+    "price": 130,
+    "description": "Light and airy mousse made with premium matcha.",
+    "category": "Balls",
+    "image": "https://thumbs.dreamstime.com/b/no-bake-matcha-energy-bites-balls-prepared-natural-ingredients-such-as-nuts-powder-dates-modern-green-chai-cocoa-chocolate-179851857.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 20,
+    "title": "Matcha Graham (4pcs)",
+    "price": 160,
+    "description": "Fluffy cupcake topped with matcha frosting.",
+    "category": "Balls",
+    "image": "https://www.itscheatdayeveryday.com/wp-content/uploads/2016/04/IMG_0680-905x1280-1-e1460823981898-249x180.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 21,
+    "title": "Strawberry Matcha",
+    "price": 220,
+    "description": "Refreshing jelly dessert infused with matcha flavor.",
+    "category": "Cakes",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCi54FIRdh3_NCzY8UGyckWiZ1_5hqS1CcEkD8cAxxYf0h6ko9HwlqKT6eLnms3arh4Ic&usqp=CAU",
+    "quantity": 0
+  },
+  {
+    "id": 22,
+    "title": "Azuki Matcha",
+    "price": 300,
+    "description": "Layered latte with creamy matcha and espresso.",
+    "category": "Cakes",
+    "image": "https://d34zicoa2zcr2f.cloudfront.net/sites/files/bakersbrewstudio2/productimg/201709/best_adzuki_matcha_cake_baking_class_in_singapore.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 23,
+    "title": "Matcha",
+    "price": 200,
+    "description": "Healthy granola bars made with matcha, nuts, and oats.",
+    "category": "Cakes",
+    "image": "https://i.pinimg.com/736x/4a/7d/4b/4a7d4b66361faf7ebc8cb83767aa8491.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 24,
+    "title": "Chocolate Matcha",
+    "price": 210,
+    "description": "Sweet brown sugar boba pearls in a creamy matcha drink.",
+    "category": "Cakes",
+    "image": "https://i.pinimg.com/736x/a0/b3/5d/a0b35dd7e3a1fa2a88fc846077b882a1.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 25,
+    "title": "Matcha Crinkle (4pcs)",
+    "price": 160,
+    "description": "Soft sponge cake rolled with matcha cream filling.",
+    "category": "Cookies",
+    "image": "https://aiyamatcharecipes.com/images/recipes/image_matcha-crinkle-cookies_1607546875.jpg",
+    "quantity": 0
+  },
+  {
+    "id": 26,
+    "title": "Matcha Biscotti (3pcs)",
+    "price": 180,
+    "description": "Soft sponge cake rolled with matcha cream filling.",
+    "category": "Cookies",
+    "image": "https://mizubatea.com/cdn/shop/articles/IMG_7781.JPG?v=1574807609",
+    "quantity": 0
+  },
+  {
+    "id": 27,
+    "title": "Matcha",
+    "price": 140,
+    "description": "Soft sponge cake rolled with matcha cream filling.",
+    "category": "Cookies",
+    "image": "https://i0.wp.com/www.sprinklesandseasalt.com/wp-content/uploads/2016/10/Matcha-Cookies-Stack.jpg?fit=600%2C900&ssl=1",
+    "quantity": 0
+  },
+  {
+    "id": 28,
+    "title": "Matcha Sugar (3pcs)",
+    "price": 160,
+    "description": "Soft sponge cake rolled with matcha cream filling.",
+    "category": "Cookies",
+    "image": "https://www.sweetandsavourypursuits.com/wp-content/uploads/2023/11/Matcha-Sugar-Cookies-2-1200-x-1200-px.jpg",
+    "quantity": 0
+  }
+]

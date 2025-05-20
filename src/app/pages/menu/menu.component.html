@@ -1,0 +1,15 @@
+<div class="vertical-tabs-container">
+  <div class="tabs">
+    <div class="menu-title">Menu</div>    
+    <button *ngFor="let cat of categories"
+            (click)="selectCategory(cat)"
+            [class.active]="selectedCategory === cat">
+      {{ cat }}
+    </button>
+  </div>
+  
+  <div class="content">
+    <app-product-list [category]="selectedCategory" [showPrice]="true" [showOrderQuantity]="true" [modelProducts]="_products"></app-product-list>
+    <button class="button cart">Add to cart</button>
+  </div>
+</div>

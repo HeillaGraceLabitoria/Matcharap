@@ -1,0 +1,158 @@
+@import url('https://fonts.cdnfonts.com/css/gagalin');
+
+:root {
+    --primary-color: #7BA05B;
+    --primary-color-text: #ffffff;
+    --text-color: #3E4B32;
+    --text-color-secondary: #6B7A5B;
+    --surface-card: #ffffff;
+    --shadow-2: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    font-family: 'Gagalin, Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #2e7d32;
+    font-size: 1.5rem;
+  }
+  
+  /* Header */
+  .hero-section {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  .brand-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .brand-title >   span{
+      color: black;
+    }
+  .hero-subtitle {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+  }
+  .location {
+    font-size: 1.2rem;
+  }
+  .social {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Delivery Banner */
+  .delivery-section {
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    color: #1b5e20;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  /* Navigation Bar */
+  .nav-bar {
+    background-color: #1b5e20;
+    padding: 1rem 0;
+  }
+  .nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+  }
+  .nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .nav-bar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Utility Bar */
+  .utility-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    flex-wrap: wrap;
+  }
+  .utility-bar input[type="text"] {
+    width: 40%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .utility-bar i {
+    font-size: 1.5rem;
+    color: #2e7d32;
+  }
+  
+  /* Featured Menu */
+  .featured-menu {
+    padding: 2rem;
+    text-align: center;
+  }
+  .featured-menu h2 {
+    color: #2e7d32;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+  }
+  .image-item {
+    background-color: #e8f5e9;
+    padding: 1rem;
+    border: 1px solid #c8e6c9;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+  }
+  .image-item img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+  .image-caption {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #2e7d32;
+    font-size: 1.2rem;
+  }
+  
+  /* Menu Button */
+  .menu-button, button {
+    background-color: #a5d6a7;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+  }
+  .menu-button:hover, button {
+    background-color: #81c784;
+  }
+  
+  a > h1{
+    color: #fff;
+  }
+  
+  a{
+    text-decoration: none!important;
+  }
+
+  

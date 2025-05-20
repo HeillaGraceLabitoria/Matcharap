@@ -1,0 +1,21 @@
+<p-card class="custom-card">
+  <ng-template pTemplate="header">
+    <img [src]="product().image" alt="{{ product().title }}" />
+  </ng-template>
+
+  <ng-template pTemplate="title">
+    <span class="card-title">
+      {{ product().title }}
+    </span>
+  </ng-template>
+
+  <ng-template pTemplate="content">
+    <p *ngIf="showPrice()">₱{{ product().price }}</p>
+
+    <div *ngIf="showQuantityToOrder()" class="quantity-control">
+      <button (click)="decrement()">−</button>
+      <input type="number" [value]="product().quantity" readonly />
+      <button (click)="increment()">+</button>
+    </div>
+  </ng-template>
+</p-card>

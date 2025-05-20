@@ -1,0 +1,32 @@
+.delivery-section {
+    color: #284907;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  
+  :host ::ng-deep .p-menubar {
+    background-color: #4d7216;
+    border-radius: 0;
+    border: none;
+  }
+  
+  :host ::ng-deep .p-menubar-root-list {
+    display: flex !important;
+    justify-content: center;
+    gap: 3rem; /* space between each menu item */
+    padding: 0;
+    margin: 0;
+  }
+  
+  :host ::ng-deep .p-menubar-root-list > li > a {
+    color: #3B5323;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  :host ::ng-deep .p-menubar-root-list > li > a:hover {
+    background-color: #A3C585;
+    color: #ffffff;
+  }
+  

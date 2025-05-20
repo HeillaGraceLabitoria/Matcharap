@@ -1,0 +1,28 @@
+:host {
+  $matcha-green: #4d7216;
+  $matcha-light: #a3c585;
+  $matcha-hover: #c7deb0;
+  $text-dark: #2e3d2c;
+  $background: #f4fdf4;
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .product-card {
+    width: 350px;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+
+}

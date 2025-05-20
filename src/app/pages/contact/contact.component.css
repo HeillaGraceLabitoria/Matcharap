@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+/* Contact Section */
+#contact {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: white;
+}
+
+.contact-box {
+  background-color: #2e7d32; /* Matcha green */
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box p {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.footer-green {
+  background-color: #2e7d32;
+  height: 30px;
+}
+
+.footer-white {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+
+  font-weight: bold;
+  font-size: 18px;
+
+  .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  background-color: #388e3c; /* Slightly lighter matcha green */
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+}

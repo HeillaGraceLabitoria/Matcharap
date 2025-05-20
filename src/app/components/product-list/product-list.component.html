@@ -1,0 +1,7 @@
+<div class="product-list">
+@for (product of filteredProducts; track $index) {
+<div class="product-card">
+    <app-product-card [product]="product" [showPrice]="showPrice()" [showQuantityToOrder]="showOrderQuantity()" [quantity]="product.quantity"/>
+</div>
+}
+</div>
